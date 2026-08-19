@@ -25,7 +25,7 @@ export function PanoramaViewer({ image, className = "" }: PanoramaViewerProps) {
       }
 
       // Script laden
-      if (!(window as Record<string, unknown>).pannellum) {
+      if (!(window as unknown as Record<string, unknown>).pannellum) {
         await new Promise<void>((resolve) => {
           const script = document.createElement("script");
           script.src = "https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js";
@@ -35,7 +35,7 @@ export function PanoramaViewer({ image, className = "" }: PanoramaViewerProps) {
       }
 
       // Viewer initialisieren
-      const pannellum = (window as Record<string, unknown>).pannellum as {
+      const pannellum = (window as unknown as Record<string, unknown>).pannellum as {
         viewer: (
           el: HTMLElement,
           config: Record<string, unknown>
