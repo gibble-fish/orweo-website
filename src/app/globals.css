@@ -1,0 +1,341 @@
+@import "tailwindcss";
+
+/* ===== ORWEO Design System – Variante 3 Modern/Tech ===== */
+
+@theme inline {
+  /* Colors */
+  --color-near-black: #0B0B0D;
+  --color-off-white: #F3F3F0;
+  --color-mid-grey: #77777A;
+  --color-champagne: #D4C3A1;
+  --color-champagne-light: #E0D4B8;
+  --color-champagne-dark: #B8A882;
+  --color-dark-surface: #111113;
+  --color-dark-card: #161618;
+  --color-dark-border: #222225;
+  --color-warm-dark: #1A1A1C;
+  --color-light-section: #F8F7F4;
+  --color-light-card: #EEEEE9;
+
+  /* Fonts */
+  --font-sans: var(--font-montserrat);
+
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+/* Base styles */
+*:where(:not(html, body, div, section, article, aside, header, main, footer, nav)) {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #0B0B0D;
+  color: #F3F3F0;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(212, 195, 161, 0.3);
+  color: #F3F3F0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333336;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4C3A1;
+}
+
+/* Typography helpers */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(22, 22, 24, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 195, 161, 0.08);
+}
+
+.glass-card-light {
+  background: rgba(248, 247, 244, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Champagne gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #F3F3F0 0%, #D4C3A1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section styles */
+.section-dark {
+  background-color: #0B0B0D;
+}
+
+.section-warm-dark {
+  background-color: #111113;
+}
+
+.section-light {
+  background-color: #F8F7F4;
+  color: #0B0B0D;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.9s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.7s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.7s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+.animation-delay-800 {
+  animation-delay: 800ms;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+/* Orbit Gallery Animation */
+@keyframes orbit-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-orbit-spin {
+  animation: orbit-spin 35s linear infinite;
+}
+
+.animate-orbit-spin > * {
+  animation: orbit-counter-spin 35s linear infinite;
+}
+
+@keyframes orbit-counter-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Button styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 32px;
+  background-color: #D4C3A1;
+  color: #0B0B0D;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #E0D4B8;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 32px;
+  border: 1px solid rgba(212, 195, 161, 0.3);
+  color: #F3F3F0;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  border-color: #D4C3A1;
+  background-color: rgba(212, 195, 161, 0.05);
+}
+
+/* Divider line with champagne accent */
+.divider-champagne {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #D4C3A1 50%, transparent 100%);
+  opacity: 0.3;
+}
+
+/* Scroll Reveal Animations */
+.scroll-reveal {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.scroll-reveal-up {
+  transform: translateY(40px);
+}
+
+.scroll-reveal-down {
+  transform: translateY(-40px);
+}
+
+.scroll-reveal-left {
+  transform: translateX(-40px);
+}
+
+.scroll-reveal-right {
+  transform: translateX(40px);
+}
+
+.scroll-reveal-fade {
+  transform: none;
+}
+
+.scroll-reveal.scroll-revealed {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Splash Loader */
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0B0B0D;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.splash-screen.splash-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.splash-logo {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: splashLogoIn 1s ease forwards 0.2s;
+}
+
+.splash-claim {
+  opacity: 0;
+  animation: splashFadeIn 0.8s ease forwards 0.8s;
+}
+
+.splash-bar {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D4C3A1, transparent);
+  opacity: 0;
+  animation: splashFadeIn 0.6s ease forwards 1.2s;
+}
+
+@keyframes splashLogoIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes splashFadeIn {
+  to {
+    opacity: 1;
+  }
+}

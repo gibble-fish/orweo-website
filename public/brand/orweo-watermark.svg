@@ -1,0 +1,17 @@
+<svg viewBox="0 0 320 50" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.3">
+  <!-- ORWEO Wasserzeichen – dezent, reduzierte Opazität -->
+  <!-- O -->
+  <path d="M8 25C8 13.954 14.954 7 22 7C29.046 7 36 13.954 36 25C36 36.046 29.046 43 22 43C14.954 43 8 36.046 8 25Z" stroke="#FFFFFF" stroke-width="2.5" fill="none"/>
+  <!-- R -->
+  <path d="M58 7V43" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M58 7H70C77 7 82 12 82 18.5C82 25 77 30 70 30H58" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M72 30L83 43" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- W -->
+  <path d="M102 7L111 38L122 18L133 38L142 7" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- E - THREE BARS -->
+  <rect x="164" y="7" width="28" height="2.5" rx="1.25" fill="#FFFFFF"/>
+  <rect x="164" y="23.75" width="22" height="2.5" rx="1.25" fill="#FFFFFF"/>
+  <rect x="164" y="40" width="28" height="2.5" rx="1.25" fill="#FFFFFF"/>
+  <!-- O -->
+  <path d="M218 25C218 13.954 224.954 7 232 7C239.046 7 246 13.954 246 25C246 36.046 239.046 43 232 43C224.954 43 218 36.046 218 25Z" stroke="#FFFFFF" stroke-width="2.5" fill="none"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 320 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- ORWEO Logo mit Claim -->
+  <!-- O -->
+  <path d="M45 25C45 13.954 51.954 7 59 7C66.046 7 73 13.954 73 25C73 36.046 66.046 43 59 43C51.954 43 45 36.046 45 25Z" stroke="#F3F3F0" stroke-width="3" fill="none"/>
+  <!-- R -->
+  <path d="M95 7V43" stroke="#F3F3F0" stroke-width="3" stroke-linecap="round"/>
+  <path d="M95 7H107C114 7 119 12 119 18.5C119 25 114 30 107 30H95" stroke="#F3F3F0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M109 30L120 43" stroke="#F3F3F0" stroke-width="3" stroke-linecap="round"/>
+  <!-- W -->
+  <path d="M139 7L148 38L159 18L170 38L179 7" stroke="#F3F3F0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- E - THREE BARS -->
+  <rect x="201" y="7" width="28" height="3" rx="1.5" fill="#F3F3F0"/>
+  <rect x="201" y="23.5" width="22" height="3" rx="1.5" fill="#D4C3A1"/>
+  <rect x="201" y="40" width="28" height="3" rx="1.5" fill="#F3F3F0"/>
+  <!-- O -->
+  <path d="M255 25C255 13.954 261.954 7 269 7C276.046 7 283 13.954 283 25C283 36.046 276.046 43 269 43C261.954 43 255 36.046 255 25Z" stroke="#F3F3F0" stroke-width="3" fill="none"/>
+  <!-- Claim -->
+  <text x="160" y="62" text-anchor="middle" font-family="Montserrat, system-ui, sans-serif" font-size="5.5" font-weight="300" letter-spacing="0.2em" fill="#D4C3A1" opacity="0.8">VISUALS THAT MAKE AN IMPACT.</text>
+</svg>
