@@ -44,3 +44,5 @@ public/videos/*.mov
 public/videos/*.mp4
 .vercel
 .env*
+
+package-lock.json
